@@ -9,7 +9,7 @@ app.post('/usuarios', (req, res) =>{ /*na rota post vai SALVAR os usuários dent
 
     users.push(req.body)
 
-    res.status(201).json(req.body) /*criar e mostrar o que criou */
+      /*res.status(201).json(req.body)*/  /*criar e mostrar o que criou */
 
    /* console.log(req.body)*/
 
