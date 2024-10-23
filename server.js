@@ -1,7 +1,13 @@
 import express from 'express'
+import cors from 'cors'
+
+
+import router from './src/src/routes.js';
 
 const app = express()
+app.use(cors())
 app.use(express.json())
+app.use(router)
 
 const users = []
 
@@ -29,8 +35,11 @@ app.listen(3000)
 console.log('Tudo certo')
 /*
 1)tipo de rota/método HTTP 
-(get - listar, post-criar, put-editar vários, 
-patch-editar um, delete-deletar)
+(get - listar, 
+post-criar, 
+put-editar vários, 
+patch-editar um, 
+delete-deletar)
 
 2)endereço
 

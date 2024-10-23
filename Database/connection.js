@@ -4,7 +4,7 @@ var knex = require('knex')({
         host : 'localhost',      /*por padrão localhost*/
         user : 'root',       /*por padrão root*/
         password : '200203',  /* sua senha definida*/
-        database : 'teste'        /*nome do seu banco criado*/
+        database : 'test'        /*nome do seu banco criado*/
      }
 });
 module.exports = knex
